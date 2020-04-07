@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<jpa:entity-mappings ptype="MONOLITH" ppkg="com.udea.concesionario4" epkg="com.udea.concesionario4.modelo" v="5.4.1" rws="_15855872582882" Pws="_15855872582882" cws="_15855872582882" persistenceUnitName="com.udea_Concesionario4_war_1.0-SNAPSHOTPU" pp="E" sm="false" xs="false" id="_15855872582881" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <jpa:entity lbl-ref="_15855872662714" pt="PAGINATION" compositePrimaryKeyType="D" compositePrimaryKeyClass="UsuarioPK" abs="false" class="Usuario" v="true" jbn="false" xre="false" m="false" rootElement="_15855872582881" id="_15855872661693">
+        <jpa:hc e="true">
+            <jpa:a>_15855872662714</jpa:a>
+        </jpa:hc>
+        <jpa:eq e="true">
+            <jpa:a>_15855872662714</jpa:a>
+        </jpa:eq>
+        <jpa:con am="PUBLIC" e="true"/>
+        <jpa:con am="PUBLIC" e="true">
+            <jpa:a>_15855872662714</jpa:a>
+            <jpa:a>_158558729237412</jpa:a>
+            <jpa:a>_158558729370113</jpa:a>
+            <jpa:a>_158558729429314</jpa:a>
+        </jpa:con>
+        <jpa:ath>Usuario</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="nombre" uil="nombre" ft="false" id="_158558729237412">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:bv>
+                    <jpa:nn m="Se debe llenar este campo"/>
+                </jpa:bv>
+                <jpa:column name="nombre" unique="false" nullable="false" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="email" uil="email" ft="false" id="_158558729370113">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:bv>
+                    <jpa:nn m="Se debe llenar este campo"/>
+                </jpa:bv>
+                <jpa:column name="email" unique="false" nullable="false" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="pass" uil="pass" ft="false" id="_158558729429314">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:bv>
+                    <jpa:nn m="Se debe llenar este campo"/>
+                </jpa:bv>
+                <jpa:column name="pass" unique="false" nullable="false" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="true" connected-entity-id="_15855872675696" v="true" xvt="" name="factura" id="_158559136761921">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" uil="id" ft="false" id="_15855872662714">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:bv>
+                    <jpa:nn m="Se debe llenar este campo"/>
+                </jpa:bv>
+                <jpa:column name="id" unique="true" nullable="false" insertable="true" updatable="true"/>
+                <jpa:generated-value/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="true" name="Usuario.findAll">
+            <jpa:query>Select e from Usuario e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Usuario.findByNombre">
+            <jpa:query>Select u from Usuario u where u.nombre=:nombre</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Usuario.findByEmail">
+            <jpa:query>Select u from Usuario u where u.email=:email</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="true" name="Usuario.findByPass">
+            <jpa:query>Select u from Usuario u where u.pass=:pass</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity lbl-ref="_15855872675707" compositePrimaryKeyClass="FacturaPK" abs="false" class="Factura" v="true" jbn="false" xre="false" m="false" rootElement="_15855872582881" id="_15855872675696">
+        <jpa:ts e="true">
+            <jpa:a>_158558744082815</jpa:a>
+        </jpa:ts>
+        <jpa:hc e="true">
+            <jpa:a>_15855872675707</jpa:a>
+        </jpa:hc>
+        <jpa:eq e="true">
+            <jpa:a>_15855872675707</jpa:a>
+        </jpa:eq>
+        <jpa:con am="PUBLIC" e="true"/>
+        <jpa:con am="PUBLIC" e="true">
+            <jpa:a>_15855872675707</jpa:a>
+            <jpa:a>_158558744082815</jpa:a>
+        </jpa:con>
+        <jpa:ath>Usuario</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="total" uil="total" ft="false" id="_158558744082815">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:bv>
+                    <jpa:nn m="Se debe llenar este campo"/>
+                </jpa:bv>
+                <jpa:column name="total" unique="false" nullable="false" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" ui="false" ft="false" id="_15855872675707">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:bv>
+                    <jpa:nn/>
+                </jpa:bv>
+                <jpa:column name="id" unique="false" nullable="false" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="DEFAULT"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Factura.findAll">
+            <jpa:query>Select e from Factura e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Factura.findByTotal">
+            <jpa:query>Select f from Factura f where f.total=:total</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Factura.findByAttribute1">
+            <jpa:query>Select f from Factura f where f.attribute1=:attribute1</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:entity lbl-ref="_158558726868210" compositePrimaryKeyType="D" compositePrimaryKeyClass="VehiculoPK" abs="false" class="Vehiculo" v="true" jbn="false" xre="false" m="false" rootElement="_15855872582881" id="_15855872686819">
+        <jpa:ts e="true">
+            <jpa:a>_158558726868210</jpa:a>
+            <jpa:a>_158559116156217</jpa:a>
+            <jpa:a>_158559116264218</jpa:a>
+            <jpa:a>_158559116313019</jpa:a>
+            <jpa:a>_158559138004123</jpa:a>
+        </jpa:ts>
+        <jpa:hc e="true">
+            <jpa:a>_158558726868210</jpa:a>
+        </jpa:hc>
+        <jpa:eq e="true">
+            <jpa:a>_158558726868210</jpa:a>
+        </jpa:eq>
+        <jpa:con am="PUBLIC" e="true"/>
+        <jpa:con am="PUBLIC" e="true">
+            <jpa:a>_158558726868210</jpa:a>
+            <jpa:a>_158559116156217</jpa:a>
+            <jpa:a>_158559116264218</jpa:a>
+            <jpa:a>_158559116313019</jpa:a>
+            <jpa:a>_158559138004123</jpa:a>
+        </jpa:con>
+        <jpa:ath>Usuario</jpa:ath>
+        <jpa:attributes>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="marca" uil="marca" id="_158559116156217">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="marca" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="modelo" uil="modelo" id="_158559116264218">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="modelo" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="precio" uil="precio" id="_158559116313019">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="precio" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
+            <jpa:many-to-one optional="true" primaryKey="true" connected-entity-id="_15855872675696" v="true" xvt="" name="factura" id="_158559138004123">
+                <jpa:xwm/>
+                <jpa:xm/>
+            </jpa:many-to-one>
+            <jpa:id attribute-type="Long" v="true" xvt="" name="id" ui="false" ft="false" id="_158558726868210">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:bv>
+                    <jpa:nn m="Se debe llenar este campo"/>
+                </jpa:bv>
+                <jpa:column name="id" unique="true" nullable="false" insertable="true" updatable="true"/>
+                <jpa:generated-value strategy="DEFAULT"/>
+            </jpa:id>
+        </jpa:attributes>
+        <jpa:nq e="false" name="Vehiculo.findAll">
+            <jpa:query>Select e from Vehiculo e</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Vehiculo.findByMarca">
+            <jpa:query>Select v from Vehiculo v where v.marca=:marca</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Vehiculo.findByModelo">
+            <jpa:query>Select v from Vehiculo v where v.modelo=:modelo</jpa:query>
+        </jpa:nq>
+        <jpa:nq e="false" name="Vehiculo.findByPrecio">
+            <jpa:query>Select v from Vehiculo v where v.precio=:precio</jpa:query>
+        </jpa:nq>
+    </jpa:entity>
+    <jpa:c>
+        <db u="jdbc:mysql://localhost:3306/concesionario" n="root" p="root" d="com.mysql.cj.jdbc.Driver"/>
+    </jpa:c>
+    <jpa:wsl>
+        <jpa:ws n="Main" id="_15855872582882">
+            <i ref="_15855872661693" x="133" y="67"/>
+            <i ref="_15855872675696" x="476" y="67"/>
+            <i ref="_15855872686819" x="416" y="235"/>
+        </jpa:ws>
+    </jpa:wsl>
+</jpa:entity-mappings>

@@ -1,0 +1,25 @@
+
+{
+    "concesionario4App": {
+        "vehiculo" : {
+            "home": {
+                "title": "Vehiculoes",
+                "createLabel": "Create a new Vehiculo",
+                "createOrEditLabel": "Create or edit a Vehiculo"
+            },
+            "created": "A new Vehiculo is created with identifier {{ param }}",
+            "updated": "A Vehiculo is updated with identifier {{ param }}",
+            "deleted": "A Vehiculo is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete Vehiculo {{ id }}?"
+            },
+            "detail": {
+                "title": "Vehiculo"
+            },
+            "marca": "marca",
+            "modelo": "modelo",
+            "precio": "precio",
+            "factura": "Factura"
+        }
+    }
+}
