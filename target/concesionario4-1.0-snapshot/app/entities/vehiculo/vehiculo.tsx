@@ -24,7 +24,7 @@ export class Vehiculo extends React.Component<IVehiculoProps> {
     return (
       <div>
         <h2 id="vehiculo-heading">
-          <Translate contentKey="concesionario4App.vehiculo.home.title">Vehiculoes</Translate>
+          <Translate contentKey="concesionario4App.vehiculo.home.title">Vehiculos</Translate>
           <Link to={`${match.url}/new`} className="btn btn-primary float-right jh-create-entity" id="jh-create-entity">
             <FontAwesomeIcon icon="plus" />
             &nbsp;
@@ -48,8 +48,12 @@ export class Vehiculo extends React.Component<IVehiculoProps> {
                   <Translate contentKey="concesionario4App.vehiculo.precio">precio</Translate>
                 </th>
                 <th>
+                  <Translate contentKey="concesionario4App.vehiculo.foto">Foto</Translate>
+                </th>
+                <th>
                   <Translate contentKey="concesionario4App.vehiculo.factura">Factura</Translate>
                 </th>
+
                 <th />
               </tr>
             </thead>
@@ -64,6 +68,7 @@ export class Vehiculo extends React.Component<IVehiculoProps> {
                   <td>{vehiculo.marca}</td>
                   <td>{vehiculo.modelo}</td>
                   <td>{vehiculo.precio}</td>
+                  <td>{vehiculo.foto}</td>
                   <td>{vehiculo.factura ? <Link to={`factura/${vehiculo.factura.id}`}>{vehiculo.factura.id}</Link> : ''}</td>
                   <td className="text-right">
                     <div className="btn-group flex-btn-group-container">

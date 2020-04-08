@@ -1,7 +1,7 @@
 {
     "home": {
-        "title": "Welcome, Java Duke!",
-        "subtitle": "This is your homepage",
+        "title": "Bienvenido!",
+        "subtitle": "Concesionario homepage",
         "logged": {
             "message": "You are logged in as user \"{{username}}\"."
         },

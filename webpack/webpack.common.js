@@ -125,11 +125,11 @@ module.exports = options => ({
     }),
     new MergeJsonWebpackPlugin({
       output: {
-        groupBy: [
+           groupBy: [
                                { pattern: "./src/main/webapp/i18n/en/*.json", fileName: "./i18n/en.json" }
           // needle-i18n-language-webpack - add/remove languages in this array
         ]
       }
-    }),
+    })
   ]
 });

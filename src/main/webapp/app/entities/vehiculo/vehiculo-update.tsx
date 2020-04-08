@@ -109,6 +109,12 @@ export class VehiculoUpdate extends React.Component<IVehiculoUpdateProps, IVehic
                   <AvField id="vehiculo-precio" type="text" name="precio" />
                 </AvGroup>
                 <AvGroup>
+                  <Label id="fotoLabel" for="foto">
+                    <Translate contentKey="concesionario4App.vehiculo.foto">foto</Translate>
+                  </Label>
+                  <AvField id="vehiculo-foto" type="img" name="foto" />
+                </AvGroup>
+                <AvGroup>
                   <Label for="factura.id">
                     <Translate contentKey="concesionario4App.vehiculo.factura">Factura</Translate>
                   </Label>

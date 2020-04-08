@@ -25,7 +25,7 @@ export class Home extends React.Component<IHomeProp> {
             <Translate contentKey="home.title">Welcome, Java Duke!</Translate>
           </h2>
           <p className="lead">
-            <Translate contentKey="home.subtitle">This is your homepage</Translate>
+            <Translate contentKey="home.subtitle"> Concesionario homepage</Translate>
           </p>
           {account && account.login ? (
             <div>

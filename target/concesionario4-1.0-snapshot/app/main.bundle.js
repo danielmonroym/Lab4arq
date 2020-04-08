@@ -113,7 +113,7 @@
 /******/
 /******/ 	var hotApplyOnUpdate = true;
 /******/ 	// eslint-disable-next-line no-unused-vars
-/******/ 	var hotCurrentHash = "876196f69a50b14fe25d";
+/******/ 	var hotCurrentHash = "4a163712adb975f29ac1";
 /******/ 	var hotRequestTimeout = 10000;
 /******/ 	var hotCurrentModuleData = {};
 /******/ 	var hotCurrentChildModule;
@@ -3433,6 +3433,10 @@ var VehiculoDetail = /** @class */ (function (_super) {
                             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.precio" }, "precio"))),
                     react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("dd", null, vehiculoEntity.precio),
                     react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("dt", null,
+                        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("span", { id: "foto" },
+                            react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.foto" }, "foto"))),
+                    react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("dd", null, vehiculoEntity.foto),
+                    react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("dt", null,
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.factura" }, "Factura")),
                     react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("dd", null, vehiculoEntity.factura ? vehiculoEntity.factura.id : '')),
                 react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Button"], { tag: react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], to: "/entity/vehiculo", replace: true, color: "info" },
@@ -3560,6 +3564,10 @@ var VehiculoUpdate = /** @class */ (function (_super) {
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Label"], { id: "precioLabel", for: "precio" },
                             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_6__["Translate"], { contentKey: "concesionario4App.vehiculo.precio" }, "precio")),
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_5__["AvField"], { id: "vehiculo-precio", type: "text", name: "precio" })),
+                    react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_5__["AvGroup"], null,
+                        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Label"], { id: "fotoLabel", for: "foto" },
+                            react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_6__["Translate"], { contentKey: "concesionario4App.vehiculo.foto" }, "foto")),
+                        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_5__["AvField"], { id: "vehiculo-foto", type: "img", name: "foto" })),
                     react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(availity_reactstrap_validation__WEBPACK_IMPORTED_MODULE_5__["AvGroup"], null,
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_4__["Label"], { for: "factura.id" },
                             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_6__["Translate"], { contentKey: "concesionario4App.vehiculo.factura" }, "Factura")),
@@ -3790,7 +3798,7 @@ var Vehiculo = /** @class */ (function (_super) {
         var _a = this.props, vehiculoList = _a.vehiculoList, match = _a.match;
         return (react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", null,
             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("h2", { id: "vehiculo-heading" },
-                react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.home.title" }, "Vehiculoes"),
+                react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.home.title" }, "Vehiculos"),
                 react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], { to: match.url + "/new", className: "btn btn-primary float-right jh-create-entity", id: "jh-create-entity" },
                     react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(_fortawesome_react_fontawesome__WEBPACK_IMPORTED_MODULE_6__["FontAwesomeIcon"], { icon: "plus" }),
                     "\u00A0",
@@ -3808,6 +3816,8 @@ var Vehiculo = /** @class */ (function (_super) {
                             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", null,
                                 react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.precio" }, "precio")),
                             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", null,
+                                react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.foto" }, "Foto")),
+                            react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", null,
                                 react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_5__["Translate"], { contentKey: "concesionario4App.vehiculo.factura" }, "Factura")),
                             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("th", null))),
                     react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tbody", null, vehiculoList.map(function (vehiculo, i) { return (react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("tr", { key: "entity-" + i },
@@ -3816,6 +3826,7 @@ var Vehiculo = /** @class */ (function (_super) {
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, vehiculo.marca),
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, vehiculo.modelo),
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, vehiculo.precio),
+                        react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, vehiculo.foto),
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", null, vehiculo.factura ? react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement(react_router_dom__WEBPACK_IMPORTED_MODULE_3__["Link"], { to: "factura/" + vehiculo.factura.id }, vehiculo.factura.id) : ''),
                         react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("td", { className: "text-right" },
                             react__WEBPACK_IMPORTED_MODULE_1___default.a.createElement("div", { className: "btn-group flex-btn-group-container" },
@@ -3905,7 +3916,6 @@ var render = function (Component) {
         react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_hot_loader__WEBPACK_IMPORTED_MODULE_4__["AppContainer"], null,
             react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_redux__WEBPACK_IMPORTED_MODULE_2__["Provider"], { store: store },
                 react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", null,
-                    devTools,
                     react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Component, null))))), rootEl);
 };
 render(_app__WEBPACK_IMPORTED_MODULE_11__["default"]);
@@ -5012,7 +5022,7 @@ var Home = /** @class */ (function (_super) {
                 react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("h2", null,
                     react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_4__["Translate"], { contentKey: "home.title" }, "Welcome, Java Duke!")),
                 react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("p", { className: "lead" },
-                    react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_4__["Translate"], { contentKey: "home.subtitle" }, "This is your homepage")),
+                    react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_4__["Translate"], { contentKey: "home.subtitle" }, " Concesionario homepage")),
                 account && account.login ? (react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement("div", null,
                     react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(reactstrap__WEBPACK_IMPORTED_MODULE_6__["Alert"], { color: "success" },
                         react__WEBPACK_IMPORTED_MODULE_2___default.a.createElement(react_jhipster__WEBPACK_IMPORTED_MODULE_4__["Translate"], { contentKey: "home.logged.message", interpolate: { username: account.login } },
@@ -6567,7 +6577,7 @@ var setLocale = function (locale) { return function (dispatch) { return tslib__W
         switch (_a.label) {
             case 0:
                 if (!!Object.keys(react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].context.translations).includes(locale)) return [3 /*break*/, 2];
-                return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("i18n/" + locale + ".json?buildTimestamp=" + '1586286807140')];
+                return [4 /*yield*/, axios__WEBPACK_IMPORTED_MODULE_1___default.a.get("i18n/" + locale + ".json?buildTimestamp=" + '1586361371495')];
             case 1:
                 response = _a.sent();
                 react_jhipster__WEBPACK_IMPORTED_MODULE_2__["TranslatorContext"].registerTranslations(locale, response.data);

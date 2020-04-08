@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <jpa:entity-mappings ptype="MONOLITH" ppkg="com.udea.concesionario4" epkg="com.udea.concesionario4.modelo" v="5.4.1" rws="_15855872582882" Pws="_15855872582882" cws="_15855872582882" persistenceUnitName="com.udea_Concesionario4_war_1.0-SNAPSHOTPU" pp="E" sm="false" xs="false" id="_15855872582881" xsi:schemaLocation="http://java.sun.com/xml/ns/persistence/orm orm_2_1.xsd" xmlns:java="http://jcp.org/en/jsr/detail?id=270" xmlns:jpa="http://java.sun.com/xml/ns/persistence/orm" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    <jpa:entity lbl-ref="_15855872662714" pt="PAGINATION" compositePrimaryKeyType="D" compositePrimaryKeyClass="UsuarioPK" abs="false" class="Usuario" v="true" jbn="false" xre="false" m="false" rootElement="_15855872582881" id="_15855872661693">
+    <jpa:entity lbl-ref="_15855872662714" pt="PAGINATION" compositePrimaryKeyType="D" compositePrimaryKeyClass="UsuarioPK" abs="false" class="Usuario" pclass="Usuario" v="true" jbn="false" xre="false" m="false" rootElement="_15855872582881" id="_15855872661693">
         <jpa:hc e="true">
             <jpa:a>_15855872662714</jpa:a>
         </jpa:hc>
@@ -16,7 +16,7 @@
         </jpa:con>
         <jpa:ath>Usuario</jpa:ath>
         <jpa:attributes>
-            <jpa:basic attribute-type="String" v="true" xvt="" name="nombre" uil="nombre" ft="false" id="_158558729237412">
+            <jpa:basic attribute-type="String" v="true" xvt="" name="nombre" pname="nombre" uil="nombre" ft="false" id="_158558729237412">
                 <jpa:xwm/>
                 <jpa:xm/>
                 <jpa:bv>
@@ -32,7 +32,7 @@
                 </jpa:bv>
                 <jpa:column name="email" unique="false" nullable="false" insertable="true" updatable="true"/>
             </jpa:basic>
-            <jpa:basic attribute-type="String" v="true" xvt="" name="pass" uil="pass" ft="false" id="_158558729429314">
+            <jpa:basic attribute-type="String" v="true" xvt="" name="pass" pname="pass" uil="pass" ft="false" id="_158558729429314">
                 <jpa:xwm/>
                 <jpa:xm/>
                 <jpa:bv>
@@ -151,6 +151,11 @@
                 <jpa:xm/>
                 <jpa:column name="precio" unique="false" nullable="true" insertable="true" updatable="true"/>
             </jpa:basic>
+            <jpa:basic attribute-type="String" v="true" xvt="" name="foto" pname="attribute" uil="foto" id="_158630854329849">
+                <jpa:xwm/>
+                <jpa:xm/>
+                <jpa:column name="foto" unique="false" nullable="true" insertable="true" updatable="true"/>
+            </jpa:basic>
             <jpa:many-to-one optional="true" primaryKey="true" connected-entity-id="_15855872675696" v="true" xvt="" name="factura" id="_158559138004123">
                 <jpa:xwm/>
                 <jpa:xm/>
@@ -177,6 +182,9 @@
         <jpa:nq e="false" name="Vehiculo.findByPrecio">
             <jpa:query>Select v from Vehiculo v where v.precio=:precio</jpa:query>
         </jpa:nq>
+        <jpa:nq e="false" name="Vehiculo.findByFoto">
+            <jpa:query>Select v from Vehiculo v where v.foto=:foto</jpa:query>
+        </jpa:nq>
     </jpa:entity>
     <jpa:c>
         <db u="jdbc:mysql://localhost:3306/concesionario" n="root" p="root" d="com.mysql.cj.jdbc.Driver"/>
@@ -185,7 +193,7 @@
         <jpa:ws n="Main" id="_15855872582882">
             <i ref="_15855872661693" x="133" y="67"/>
             <i ref="_15855872675696" x="476" y="67"/>
-            <i ref="_15855872686819" x="416" y="235"/>
+            <i ref="_15855872686819" x="415" y="235"/>
         </jpa:ws>
     </jpa:wsl>
 </jpa:entity-mappings>

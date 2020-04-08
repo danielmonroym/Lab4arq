@@ -3,7 +3,6 @@ import { Switch } from 'react-router-dom';
 
 // tslint:disable-next-line:no-unused-variable
 import ErrorBoundaryRoute from 'app/shared/error/error-boundary-route';
-
 import Usuario from './usuario';
 import Factura from './factura';
 import Vehiculo from './vehiculo';

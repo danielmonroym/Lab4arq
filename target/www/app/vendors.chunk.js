@@ -85226,8 +85226,8 @@ __export(__webpack_require__(/*! ./pagination-utils */ "./node_modules/react-jhi
 
 Object.defineProperty(exports, "__esModule", { value: true });
 var initLevels = function () {
-    if (Object({"NODE_ENV":'development',"BUILD_TIMESTAMP":'1586286807140',"VERSION":'1.0-snapshot',"DEBUG_INFO_ENABLED":true,"SERVER_API_URL":"resources/"}).LOG_LEVEL)
-        return Object({"NODE_ENV":'development',"BUILD_TIMESTAMP":'1586286807140',"VERSION":'1.0-snapshot',"DEBUG_INFO_ENABLED":true,"SERVER_API_URL":"resources/"}).LOG_LEVEL;
+    if (Object({"NODE_ENV":'development',"BUILD_TIMESTAMP":'1586361371495',"VERSION":'1.0-snapshot',"DEBUG_INFO_ENABLED":true,"SERVER_API_URL":"resources/"}).LOG_LEVEL)
+        return Object({"NODE_ENV":'development',"BUILD_TIMESTAMP":'1586361371495',"VERSION":'1.0-snapshot',"DEBUG_INFO_ENABLED":true,"SERVER_API_URL":"resources/"}).LOG_LEVEL;
     return  true ? 'info' : undefined;
 };
 var level = initLevels();

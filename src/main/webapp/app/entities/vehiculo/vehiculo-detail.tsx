@@ -47,6 +47,12 @@ export class VehiculoDetail extends React.Component<IVehiculoDetailProps> {
             </dt>
             <dd>{vehiculoEntity.precio}</dd>
             <dt>
+              <span id="foto">
+                <Translate contentKey="concesionario4App.vehiculo.foto">foto</Translate>
+              </span>
+            </dt>
+            <dd>{vehiculoEntity.foto}</dd>
+            <dt>
               <Translate contentKey="concesionario4App.vehiculo.factura">Factura</Translate>
             </dt>
             <dd>{vehiculoEntity.factura ? vehiculoEntity.factura.id : ''}</dd>

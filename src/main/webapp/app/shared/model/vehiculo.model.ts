@@ -5,6 +5,7 @@ export interface IVehiculo {
   marca?: string;
   modelo?: string;
   precio?: string;
+  foto?: string;
   factura?: IFactura;
 }
 

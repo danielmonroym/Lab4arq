@@ -3,7 +3,7 @@
     "concesionario4App": {
         "vehiculo" : {
             "home": {
-                "title": "Vehiculoes",
+                "title": "Vehiculo",
                 "createLabel": "Create a new Vehiculo",
                 "createOrEditLabel": "Create or edit a Vehiculo"
             },
@@ -19,6 +19,7 @@
             "marca": "marca",
             "modelo": "modelo",
             "precio": "precio",
+            "foto": "foto",
             "factura": "Factura"
         }
     }

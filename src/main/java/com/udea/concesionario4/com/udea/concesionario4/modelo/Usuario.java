@@ -16,7 +16,8 @@ import javax.validation.constraints.NotNull;
 
 @Entity
 @IdClass(UsuarioPK.class)
-@NamedQuery(name="Usuario.findAll",query="Select e from Usuario e")
+
+@NamedQuery(name="findAll",query="Select e from Usuario e")
 public class Usuario { 
 
 

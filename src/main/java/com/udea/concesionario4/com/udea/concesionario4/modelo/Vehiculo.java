@@ -42,6 +42,11 @@ public class Vehiculo {
     private String precio;
 
 
+    @Basic
+    @Column(name="foto")
+    private String foto;
+
+
     @Id@ManyToOne
     private Factura factura;
 
@@ -50,11 +55,12 @@ public class Vehiculo {
     public Vehiculo(){
 }
 
-    public Vehiculo(Long id,String marca,String modelo,String precio,Factura factura){
+    public Vehiculo(Long id,String marca,String modelo,String precio,String foto,Factura factura){
 this.id=id;
 this.marca=marca;
 this.modelo=modelo;
 this.precio=precio;
+this.foto=foto;
 this.factura=factura;
 }
 
@@ -101,6 +107,16 @@ this.factura=factura;
 
 
 
+    public String getFoto()  {
+        return foto;
+    }
+
+    public void setFoto(String foto) {
+        this.foto = foto;
+    }
+
+
+
     public Factura getFactura()  {
         return factura;
     }
@@ -131,7 +147,7 @@ this.factura=factura;
 
     @Override
     public String toString() {
-        return "Vehiculo{" + " id=" + id + ", marca=" + marca + ", modelo=" + modelo + ", precio=" + precio + ", factura=" + factura + '}';
+        return "Vehiculo{" + " id=" + id + ", marca=" + marca + ", modelo=" + modelo + ", precio=" + precio + ", foto=" + foto + ", factura=" + factura + '}';
     }
 
 
